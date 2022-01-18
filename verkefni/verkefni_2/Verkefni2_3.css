@@ -1,0 +1,29 @@
+div.group {
+  padding: 10px;
+  display: flex;
+}
+
+section.box {
+  border: 3px solid black;
+  padding: 5px;
+  height: min-content;
+}
+
+.athugid {
+  background-color: yellow;
+  text-align: center;
+}
+
+.bigL {
+  font-size: 50px;
+  text-transform: capitalize;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 20px;
+  padding: 0px;
+  float: left;
+}
+
+.imgR {
+  float: right;
+}
