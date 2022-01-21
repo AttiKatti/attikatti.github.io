@@ -1,0 +1,95 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  max-width: 60em;
+  background-color: silver;
+  margin: 0 auto;
+}
+
+h3 {
+  border-bottom: 2px solid black;
+}
+
+.kettir {
+  color: orange;
+}
+
+div.kettir {
+  border: 5px solid salmon;
+  padding: 0px;
+  margin: 20px;
+}
+
+.hundar {
+  color: brown;
+}
+
+div.hundar {
+  border: 5px solid sienna;
+  padding: 0px;
+  margin: 20px;
+}
+
+div.megahundar {
+  border: 10px solid snow;
+  padding: 20px;
+  margin: 16px;
+}
+
+.turtles {
+  color: green;
+}
+
+div.turtles {
+  border: 5px dashed greenyellow;
+  padding: 0px;
+  margin: 20px;
+}
+
+div.megaturtles {
+  border: 20px groove pink;
+  padding: 5px;
+  margin: 75px;
+}
+
+ul.displayBlock {
+  display: block;
+  margin: 50px;
+  border-bottom: 3px solid rebeccapurple;
+}
+
+ul.displayInline {
+  margin-left: 50px;
+  margin-right: 50px;
+  padding-bottom: 50px;
+  border-bottom: 3px solid seagreen;
+}
+
+ul.displayInlineBlock {
+  padding-bottom: 10px;
+  display: inline-block;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.listItemA {
+  border: 10px dotted turquoise;
+  padding: 10px;
+  margin: 25px;
+}
+
+.listItemB {
+  display: inline;
+  border: 3px dashed indigo;
+  padding: 10px;
+  margin: 25px;
+}
+
+.listItemC {
+  display: inline-block;
+  border: 3px groove palevioletred;
+  padding: 10px;
+  margin: 25px;
+}
