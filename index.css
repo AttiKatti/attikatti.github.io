@@ -1,21 +1,27 @@
 body {
-    background-color: aquamarine;
-    margin: 0, auto
-} 
-
-h1 {
-    color: blue;
+  background-image: radial-gradient(yellow 10%, orange 25%, red);
 }
 
-h2 {
-    color: hotpink;
+h1,
+h3 {
+  text-align: center;
+}
+
+h1 {
+  color: blue;
+  font-size: 200%;
 }
 
 h3 {
-    color: blueviolet;
+  color: blueviolet;
+  font-size: 150%;
 }
 
 li {
-    font-size: large;
-    list-style-type: square;
+  font-size: 120%;
 }
+
+h3.nafn {
+  color: purple;
+}
+
