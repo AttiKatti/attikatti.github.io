@@ -1,0 +1,137 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+}
+
+body {
+  background-image: radial-gradient(yellow, orange, red, green);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.myndMeerkat {
+  background-image: radial-gradient(green 30%, red, orange, green);
+}
+
+footer {
+  text-align: center;
+}
+
+h1,
+h3 {
+  font-family: "Lobster", cursive;
+  font-weight: bolder;
+  background-image: repeating-linear-gradient(to right, black, orange 1%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+
+.kattarmyndir {
+  margin: 0, auto;
+  padding: 0;
+}
+
+h1 {
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  body {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+      "headermynd headermynd"
+      "headerfyrirsogn headerfyrirsogn"
+      "s1 s2"
+      "footer footer";
+    background-image: radial-gradient(yellow, orange, red, green);
+  }
+
+  header.mynd {
+    grid-area: headermynd;
+  }
+
+  header.fyrirsogn {
+    grid-area: headerfyrirsogn;
+    text-align: center;
+  }
+
+  .myndLjon,
+  .myndGras {
+    width: 100%;
+  }
+
+  .myndMeerkat {
+    aspect-ratio: 100%;
+    width: 700px;
+    background-image: radial-gradient(green 30%, red, orange, green);
+  }
+
+  section p {
+    background-color: rgb(11, 211, 11);
+    color: white;
+    padding: 2rem;
+  }
+
+  section.s1 {
+    grid-area: s1;
+    padding: 2em;
+  }
+
+  section.s2 {
+    grid-area: s2;
+    padding: 2em;
+  }
+
+  footer {
+    grid-area: footer;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    gap: 0;
+  }
+
+  .kattarmyndir {
+    margin: 0;
+    padding: 0;
+  }
+
+  h1 {
+    font-size: 400%;
+  }
+
+  figcaption.josafat {
+    font-size: 200%;
+    color: white;
+  }
+}
+
+@media screen and (min-width: 2000px) {
+  body {
+    margin: 0 auto;
+  }
+}
