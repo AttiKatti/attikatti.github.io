@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    X-Frame-Options: SAMEORIGIN
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Verkefni 6</title>
+    <link rel="stylesheet" href="Verkefni6.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <!-- <picture> -->
+          <source media="(min-width: 80em)" srcset="shc.jpg" />
+          <source media="(min-width: 60em)" srcset="shc60em.jpg" />
+          <source media="(min-width: 48em)" srcset="shc48em.jpg" />
+          <source media="(min-width: 37.5em)" srcset="shc37em.jpg" />
+          <img class="hadron" src="Myndir/shc.jpg" alt="Stór hadron collider" />
+        </picture>
+
+        <h1>The Large Hadron Collider</h1>
+      </header>
+      <div class="navbar">
+      <nav>
+        <div class="nav1"><a href="#article">Grein</a></div>
+        <div class="nav2"><a href="#video">Myndskeið</a></div>
+        <div class="nav3"><a href="#hljod">Hljóðbrot</a></div>
+        <div class="nav4"><a href="#kort1">Kort</a></div>
+        <div class="nav5"><a href="#fotur1">Upplýsingar</a></div>
+      </nav>
+    </div>
+      <main>
+        <article id="article">
+          The Large Hadron Collider (LHC) is the world’s largest and most
+          powerful particle accelerator. It first started up on 10 September
+          2008, and remains the latest addition to CERN’s accelerator complex.
+          The LHC consists of a 27-kilometre ring of superconducting magnets
+          with a number of accelerating structures to boost the energy of the
+          particles along the way.
+          <br /><br />
+          Inside the accelerator, two high-energy particle beams travel at close
+          to the speed of light before they are made to collide. The beams
+          travel in opposite directions in separate beam pipes – two tubes kept
+          at ultrahigh vacuum. They are guided around the accelerator ring by a
+          strong magnetic field maintained by superconducting electromagnets.
+          The electromagnets are built from coils of special electric cable that
+          operates in a superconducting state, efficiently conducting
+          electricity without resistance or loss of energy. This requires
+          chilling the magnets to ‑271.3°C – a temperature colder than outer
+          space. For this reason, much of the accelerator is connected to a
+          distribution system of liquid helium, which cools the magnets, as well
+          as to other supply services.
+          <br /><br />
+          Thousands of magnets of different varieties and sizes are used to
+          direct the beams around the accelerator. These include 1232 dipole
+          magnets 15 metres in length which bend the beams, and 392 quadrupole
+          magnets, each 5–7 metres long, which focus the beams. Just prior to
+          collision, another type of magnet is used to "squeeze" the particles
+          closer together to increase the chances of collisions. The particles
+          are so tiny that the task of making them collide is akin to firing two
+          needles 10 kilometres apart with such precision that they meet
+          halfway.
+          <br /><br />
+          All the controls for the accelerator, its services and technical
+          infrastructure are housed under one roof at the CERN Control Centre.
+          From here, the beams inside the LHC are made to collide at four
+          locations around the accelerator ring, corresponding to the positions
+          of four particle detectors – ATLAS, CMS, ALICE and LHCb.
+        </article>
+        <div id="video" class="video">
+          <iframe
+            width="100%"
+            height="300"
+            src="https://www.youtube.com/embed/bTHzB4h0po4"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </div>
+        <figure>
+          <figcaption>
+            Listen to the proton beam smash into the graphite core of the beam dump.
+          </figcaption>
+          <div id="hljod" class="hljod">
+            <audio controls>
+              <source src="BeamOnTed1.mp3" type="audio/mpeg" />
+              <source src="BeamOnTed1.ogg" type="audio/ogg" />
+              Your browser doees not support the video element.
+            </audio>
+          </div>
+        </figure>
+      </main>
+      <footer>
+        <dl class="fotur1" id="fotur1">
+          <dt>Nafn</dt>
+          <dd>Ástþór Ragnar Gautason</dd>
+          <dt>Tölvupóstur</dt>
+          <dd>attifrikor@gmail.com</dd>
+          <dt>Áfangi</dt>
+          <dd>Vefhönnun</dd>
+          <dt>Skóli</dt>
+          <dd>Tækniskóli Íslands</dd>
+        </dl>
+        <ul class="fotur2">
+          <li><a href="Verkefni5.html">Verkefni 5</a></li>
+          <li><a href="Verkefni4_1.html">Verkefni 4</a></li>
+          <li><a href="Verkefni3_1.html">Verkefni 3.1</a></li>
+          <li><a href="Verkefni3_2.html">Verkefni 3.2</a></li>
+          <li><a href="Verkefni3_3.html">Verkefni 3.3</a></li>
+        </ul>
+        <figure class="kort">
+          <figcaption>Cern Stjórnstöð</figcaption>
+        <iframe
+          class="fotur3"
+          id="kort1"
+          src="https://www.google.com/maps/embed?pb=!4v1645106117128!6m8!1m7!1sCAoSLEFGMVFpcE0yV3dKNUQzVmFZVG5aQUZjeVhkRkkzOGxBemstSTJURF8ySHNU!2m2!1d46.23133850217992!2d6.055028013643772!3f191.94337211768485!4f-9.695619621838517!5f0.4000000000000002"
+          width="400"
+          height="300"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+        ></iframe>
+      </figure>
+      <figure class="kort2">
+        <figcaption>Cern höfuðstöðvar í Sviss</figcaption>
+        <iframe
+          class="fotur4"
+          id="kort2"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10511.129157276275!2d6.049623369523307!3d46.23399897085175!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x478c62fcec737b11%3A0x81bef3ae7a885e31!2sCERN!5e0!3m2!1sis!2sis!4v1645107468793!5m2!1sis!2sis"
+          width="400"
+          height="300"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+        ></iframe>
+      </figure>
+      </footer>
+    </div>
+  </body>
+</html>
