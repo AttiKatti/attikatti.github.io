@@ -25,6 +25,7 @@ body {
     "header"
     "nav"
     "main"
+    "myndir"
     "footer";
   overflow-y: hidden;
 }
@@ -49,7 +50,8 @@ div.nav1,
 div.nav2,
 div.nav3,
 div.nav4,
-div.nav5 {
+div.nav5,
+div.nav6 {
   text-align: center;
   display: inline-flex;
   width: 18%;
@@ -68,7 +70,7 @@ a {
 }
 
 a:link {
-  color: blue;
+  color: white;
 }
 
 a:visited {
@@ -114,6 +116,23 @@ header h1 {
   text-shadow: 2px 2px 0px cyan, -2px -2px 0px cyan, 2px -2px 0px cyan,
     -2px 2px 0px cyan, 4px 4px 0px black, -4px -4px 0px black,
     4px -4px 0px black, -4px 4px 0px black;
+}
+
+.album {
+  grid-area: myndir;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: auto;
+}
+
+.album img {
+  width: 100%;
+  aspect-ratio: 100%;
+}
+
+.forseti {
+  background-image: radial-gradient(white, cyan, blue);
+  margin-top: 200px;
 }
 
 footer {
@@ -228,7 +247,8 @@ dl {
     grid-template-rows: auto;
     grid-template-areas:
       "article video"
-      "article hljod";
+      "article eliezer"
+      "hljod eliezer";
   }
 
   article {
@@ -243,6 +263,39 @@ dl {
 
   .hljod {
     grid-area: hljod;
+  }
+
+  .forseti {
+    grid-area: eliezer;
+    height: 600px;
+  }
+
+  .eliezer {
+    margin-left: 150px;
+  }
+
+  .album {
+    grid-area: myndir;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .vinstri {
+    margin: 2em 0;
+    margin-left: 7em;
+  }
+
+  .haegri {
+    margin: 2em 0;
+  }
+
+  .album img {
+    width: 561px;
+    aspect-ratio: 100%;
   }
 
   ul {
@@ -301,11 +354,13 @@ dl {
   main {
     grid-area: main;
     display: grid;
+    height: 150vh;
     grid-template-columns: 50% 50%;
     grid-template-rows: auto;
     grid-template-areas:
       "article video"
-      "article hljod";
+      "article eliezer"
+      "hljod eliezer";
     background-color: #333;
     color: white;
   }
@@ -325,7 +380,6 @@ dl {
     grid-area: hljod;
     aspect-ratio: 100%;
     width: 300px;
-    padding: 1rem;
   }
 
   footer {
