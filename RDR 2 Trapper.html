@@ -10,7 +10,7 @@
     var checkboxValues = JSON.parse(localStorage.getItem('checkboxValues')) || {};
     var $checkboxes = $("#checkbox-container :checkbox");
 
-    $("#checkbox-container :checkbox").on("change", function(){
+    $(":checkbox").on("change", function(){
     alert("The checkbox with the ID '" + this.id + "' changed");
     });
 
