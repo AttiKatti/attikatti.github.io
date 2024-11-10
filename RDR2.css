@@ -1,0 +1,13 @@
+li {
+    padding-left: 2em;
+    list-style: none;
+}
+ul {
+    padding-top: 1em;
+}
+
+input {
+    float: left;
+    margin-top: 0;
+    margin-bottom: 0;
+}
