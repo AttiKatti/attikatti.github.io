@@ -5,27 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Red Dead Redemption 2 pelts</title>
     <link rel="stylesheet" href="RDR2.css">
-    <script src="jquery-3.7.1.js"></script>
-    <script>
-    var checkboxValues = JSON.parse(localStorage.getItem('checkboxValues')) || {};
-    var $checkboxes = $("#checkbox-container :checkbox");
-
-    $(":checkbox").on("change", function(){
-    alert("The checkbox with the ID '" + this.id + "' changed");
-    });
-
-    $checkboxes.on("change", function(){
-    $checkboxes.each(function(){
-        checkboxValues[this.id] = this.checked;
-    });
-    localStorage.setItem("checkboxValues", JSON.stringify(checkboxValues));
-    });
-
-    $.each(checkboxValues, function(key, value) {
-    $("#" + key).prop('checked', value);
-    });
-
-    </script>
 
 </head>
 <body>
@@ -735,6 +714,36 @@
         <li>Perfect Panther Pelt <input type="checkbox"></li>
     </ul>
 </ul>
+
+    <script>
+        // Function to save checkbox states to localStorage
+        function saveCheckboxState() {
+            const checkboxes = document.querySelectorAll('input[type="checkbox"]');
+            checkboxes.forEach(checkbox => {
+                localStorage.setItem(checkbox.id, checkbox.checked);
+            });
+        }
+
+        // Function to load checkbox states from localStorage
+        function loadCheckboxState() {
+            const checkboxes = document.querySelectorAll('input[type="checkbox"]');
+            checkboxes.forEach(checkbox => {
+                const state = localStorage.getItem(checkbox.id);
+                if (state !== null) {
+                    checkbox.checked = (state === 'true');
+                }
+            });
+        }
+
+        // Load checkbox states when the page is loaded
+        window.onload = loadCheckboxState;
+
+        // Add event listeners to save state on checkbox change
+        const checkboxes = document.querySelectorAll('input[type="checkbox"]');
+        checkboxes.forEach(checkbox => {
+            checkbox.addEventListener('change', saveCheckboxState);
+        });
+    </script>
 
 </body>
 </html>
